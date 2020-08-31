@@ -1,0 +1,21 @@
+{
+    "name": "T-Ö Portfolio",
+    "short_name": "Tolga Özdemir's Portfolio",
+    "start_url": "/",
+    "background_color": "#0f1014",
+    "display": "standalone",
+    "icons": [
+        {
+            "src":"/assets/images/mario.png",
+            "type": "image/png",
+            "sizes":"512x512"
+        },
+        {
+            "src":"/assets/images/marioios.png",
+            "type": "image/png",
+            "sizes":"192x192"
+        }
+    ],
+    "theme_color": "#0f1014",
+    "orientation": "portrait-primary"
+}

@@ -29,5 +29,4 @@ Dit projekt skal derfor integreres med:
   1. Et **Manifest**
   2. En **Serviceworker**
   
-# Build, test, and learn!
-God arbejdslyst...
+# Build, test, and lear

@@ -1,0 +1,30 @@
+{
+  "name": "gulp-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "animate.css": "^4.1.0",
+    "ejs": "^2.7.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-build": "^0.5.3",
+    "gulp-connect": "^5.7.0",
+    "gulp-ejs": "^4.1.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0",
+    "pwacompat": "^2.0.16",
+    "tailwindcss": "^1.4.6"
+  }
+}
