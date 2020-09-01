@@ -1,23 +1,29 @@
 .main__footer {
     width: 100%;
-    height: 100px;
-    background-color: #14161b;
+    height: 60px;
+    background-color: #2c2d33;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
+    position: absolute;
+    bottom: 0;
 }
 
-.footer__text {
-    font-size: 0.7rem;
-    letter-spacing: 0.5px;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
+.footer__button {
+    width: auto;
+}
+
+.button__img {
+    width: 40px;
+    height: 40px;
+}
+
+.button__img:hover {
+    fill: white; 
 }
 
 @media only screen and (min-width: 768px) {
 
-    .footer {
-        height: 200px;
-    }
+
 }
