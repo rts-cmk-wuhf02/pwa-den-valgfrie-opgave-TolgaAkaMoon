@@ -8,6 +8,7 @@
     color: white;
     position: absolute;
     bottom: 0;
+    z-index: 2;
 }
 
 .footer__button {
@@ -16,8 +17,13 @@
 }
 
 .button__img {
+    margin-top: 10px;
     width: 40px;
     height: 40px;
+}
+
+.button__img:hover {
+    opacity: 0.3;
 }
 
 .button__img:hover {

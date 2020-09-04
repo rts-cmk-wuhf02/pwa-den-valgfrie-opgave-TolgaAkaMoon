@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
+
+.main {
+  margin-top: 100px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row: auto; 
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main__container {
+  width: 350px;
+  height: 350px;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: -50px;
+  position: relative;
+  overflow: hidden; }
+
+.container__img {
+  width: 100%;
+  position: absolute;
+  opacity: 1;
+  margin-top: 2px;
+  z-index: 0; }
+
+.section__artistIMG {
+  height: 45px;
+  margin-left: 40px;
+  margin-top: 80px;
+  position: absolute; }
+
+.section__title {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 1rem;
+  z-index: 1; }
+
+.section__artist {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 100px;
+  font-size: 0.75rem;
+  z-index: 1;
+  font-weight: 300; }
+
+.section__section {
+  position: relative;
+  width: 375px;
+  margin: 0 auto; }
+
+.section__container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 80px; }
+
+.container__slider {
+  width: 300px;
+  z-index: -3;
+  height: 5px;
+  margin-top: 100px;
+  float: left;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.3); }
+
+.slider__progress {
+  background-color: white;
+  position: absolute;
+  width: 0px;
+  float: left;
+  border-radius: 15px;
+  height: 5px; }
+
+.slider__playhead {
+  width: 15px;
+  height: 15px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: white; }
+
+.container__start {
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 25px;
+  font-size: 0.75rem; }
+
+.container__end {
+  position: absolute;
+  margin-top: 120px;
+  right: 50px;
+  font-size: 0.75rem; }
+
+.section__functions {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+  margin-top: 250px;
+  display: flex;
+  justify-content: space-evenly; }
+
+.functions__shuffle {
+  width: 20px; }
+
+.functions__back {
+  width: 25px; }
+
+.functions__play {
+  width: 50px; }
+
+.functions__forward {
+  width: 25px; }
+
+.functions__repeat {
+  width: 20px; }
+
+
+
+
+
+

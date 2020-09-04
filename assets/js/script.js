@@ -81,13 +81,13 @@ document.addEventListener("DOMContentLoaded", () => {
           tracks.tracks.items.forEach(produkt => {
               console.log(produkt.track)
               document.querySelector(".main").innerHTML += `
+              <a class="container__anker" href="/player/?track=${produkt.track.id}">
               <div class="main__container">
-                <a class="container__anker" href="/player/?track=${produkt.track.id}">
                   <img src="${produkt.track.album.images[0].url}" class="container__background">
                   <h2 class="container__title">${produkt.track.name}</h2>
                   <h5 class="container__desc">${produkt.track.artists[0].name}</h5>
-                </a>
               </div>
+              </a>
               `
           })
       })
