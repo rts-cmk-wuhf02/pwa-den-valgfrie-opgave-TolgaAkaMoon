@@ -65,6 +65,18 @@ function watchManifest(done) {
     gulp.watch('./manifest.webmanifest', { ignoreInitial: false }, manifest);
 }
 
+function mp3(done) {
+    gulp.src('./assets/song/*.mp3')
+        .pipe(gulp.dest('./dist/assets/song'))
+        .pipe(connect.reload());
+    done();
+}
+
+function watchMp3(done) {
+    gulp.watch('./assets/song/*.mp3', { ignoreInitial: false }, mp3);
+}
+
+
 function serviceWorker(done) {
     gulp.src('./sw.js')
         .pipe(gulp.dest('./dist/'))
@@ -93,6 +105,7 @@ gulp.task('dev', function (done) {
     watchServiceworker();
     watchManifest();
     watchHtml();
+    watchMp3()
     watchScss();
     watchJs();
     watchImages();
@@ -107,6 +120,7 @@ gulp.task('build', function (done) {
     serviceWorker(done);
     manifest(done);
     html(done);
+    mp3(done)
     scss(done);
     js(done);
     images(done);

@@ -12,6 +12,8 @@
 </head>
 <body>
 
+    <% include ../partials/navbar %>
+
 <main class="main">
 
     <div class="main__container">
@@ -28,20 +30,20 @@
 
         <div class="section__container">
             <audio class="container__player">
-                <source src="" type="audio/mp3">
+                <source class="player__src" src="" type="audio/mp3">
             </audio>
             <div class="container__slider">
                 <div class="slider__progress"></div>
                 <div class="slider__playhead" style="margin-left:0px;"></div>
             </div>
             <p class="container__start">0:00</p>
-            <p class="container__end">0:00</p>
+            <p class="container__end"></p>
         </div>
 
         <div class="section__functions">
             <img class="functions__shuffle" src="../assets/images/shuffle.svg">
             <img class="functions__back" src="../assets/images/back.svg">
-            <img class="functions__play" src="../assets/images/play.svg">
+            <img class="functions__play" src="../assets/images/playbutton.svg">
             <img class="functions__forward" src="../assets/images/next.svg">
             <img class="functions__repeat" src="../assets/images/repeat.svg">
         </div>
@@ -51,5 +53,6 @@
 
 <% include ../partials/footer %>
 <script src="../assets/javascript/player.js"></script>
+<script src="../assets/javascript/navbar.js"></script>
 </body>
 </html>
