@@ -35,7 +35,7 @@ Notification.requestPermission(function(status){
   console.log('Notification permission status:', status)
   if (Notification.permission == 'granted') {
     navigator.serviceWorker.getRegistration().then(function(reg) {
-      reg.showNotification("Velkommen til mit Portfolio")
+      reg.showNotification("You can install this app via the settings button!")
       var options = {
         body: 'Successfully Installed IPlayMusicV2',
         icon: 'assets/images/icon.png',
