@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let nextButton = document.querySelector(".functions__forward");
                 let repeatButton = document.querySelector(".functions__repeat");
                 let mDuration = millisToMinutesAndSeconds(track.duration_ms);
-                
+
                 music.setAttribute("title", track.name)
                 music.setAttribute("poster", track.album.images[0].url)
 
