@@ -23,9 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .then(res => res.json())
       .then(tracks => {
-          console.log(tracks.tracks.items)
           tracks.tracks.items.forEach(produkt => {
-              console.log(produkt.track)
               document.querySelector(".main").innerHTML += `
               <a class="container__anker" href="/player/?track=${produkt.track.id}">
               <div class="main__container">

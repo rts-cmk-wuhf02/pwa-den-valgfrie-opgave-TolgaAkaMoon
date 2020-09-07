@@ -70,8 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 let repeatButton = document.querySelector(".functions__repeat");
                 let mDuration = millisToMinutesAndSeconds(track.duration_ms);
         
-                console.log(music)
-        
 
                 playButton.addEventListener("click", function () { if (music.paused) { music.play();
                 playButton.setAttribute("src", "../assets/images/pause.svg"); } else { music.pause();
