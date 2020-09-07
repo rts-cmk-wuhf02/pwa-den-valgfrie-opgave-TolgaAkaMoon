@@ -37,7 +37,7 @@ Notification.requestPermission(function(status){
     navigator.serviceWorker.getRegistration().then(function(reg) {
       reg.showNotification("Velkommen til mit Portfolio")
       var options = {
-        body: 'Here is a notification body!',
+        body: 'Successfully Installed IPlayMusicV2',
         icon: 'assets/images/icon.png',
         vibrate: [100, 50, 100],
         data: {
@@ -45,7 +45,7 @@ Notification.requestPermission(function(status){
           primaryKey: 1
         }
       };
-      reg.showNotification('Hello world!', options);
+      reg.showNotification('You have now installed IPlayMusicV2, enjoy!', options);
     });
   }
 })
