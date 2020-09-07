@@ -69,9 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let nextButton = document.querySelector(".functions__forward");
                 let repeatButton = document.querySelector(".functions__repeat");
                 let mDuration = millisToMinutesAndSeconds(track.duration_ms);
-        
-                music.attributes.title = track.name;
-                music.attributes.poster = track.album.images[0].url;
+    
 
                 playButton.addEventListener("click", function () { if (music.paused) { music.play();
                 playButton.setAttribute("src", "../assets/images/pause.svg"); } else { music.pause();
@@ -102,7 +100,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (newMargLeft < 0) { playhead.style.marginLeft = "0px";}
                 if (newMargLeft > timelineWidth) { playhead.style.marginLeft = timelineWidth + "px";}}
                 function getPosition(el) { return el.getBoundingClientRect().left; }
-                setInterval(function () { progressBar.style.width = parseInt(playhead.style.marginLeft.replace(/px/, "")) + 5 + "px";}, 10);
+                setInterval(function () { 
+                    music.attributes.title = track.name;
+                    music.attributes.poster = track.album.images[0].url;
+                    progressBar.style.width = parseInt(playhead.style.marginLeft.replace(/px/, "")) + 5 + "px";}, 10);
 
 
 
