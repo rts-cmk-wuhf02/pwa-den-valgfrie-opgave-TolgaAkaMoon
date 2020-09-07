@@ -4,7 +4,7 @@ let checbox = document.querySelector("#checkbox");
 
 if('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('../../sw.js').then(function(registration) {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
       console.log('ServiceWorker registration was successful with scope: ', registration.scope);
     }, function (err) {
       console.log('ServiceWorker registration failed: ', err);
@@ -38,7 +38,7 @@ Notification.requestPermission(function(status){
       reg.showNotification("Velkommen til mit Portfolio")
       var options = {
         body: 'Here is a notification body!',
-        icon: 'assets/images/marios.png',
+        icon: 'assets/images/icon.png',
         vibrate: [100, 50, 100],
         data: {
           dateOfArrival: Date.now(),

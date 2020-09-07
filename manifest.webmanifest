@@ -6,14 +6,9 @@
     "display": "standalone",
     "icons": [
         {
-            "src":"/assets/images/mario.png",
+            "src":"/assets/images/icon.png",
             "type": "image/png",
             "sizes":"512x512"
-        },
-        {
-            "src":"/assets/images/marioios.png",
-            "type": "image/png",
-            "sizes":"192x192"
         }
     ],
     "theme_color": "#0f1014",

@@ -43,25 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
                   }
                 document.querySelector(".container__end").innerText = millisToMinutesAndSeconds(track.duration_ms);
 
-                let musicFiles = [
-                    {name: "elvis", path: "../assets/song/ELVIS.mp3"},
-                    {name: "guap", path: "../assets/song/Guap.mp3"},
-                    {name: "love", path: "../assets/song/LOVE.mp3"},
-                    {name: "rewinder", path: "../assets/song/Rewinder.mp3"}
-                ];
-
-                
-                    if (track.name == "ALL MY LOVE (feat. ATYPISK)"){
-                        document.querySelector(".player__src").src = musicFiles[2].path;
-                    } else if (track.name == "ELVIS (feat. Carmon)"){
-                        document.querySelector(".player__src").src = musicFiles[0].path;
-                    } else if (track.name == "Guap"){
-                        document.querySelector(".player__src").src = musicFiles[1].path;
-                    } else if (track.name == "Rewinder (feat. Lamin & NODE)"){
-                        document.querySelector(".player__src").src = musicFiles[3].path;
-                    } else {}
-
-
                 let music = document.querySelector(".container__player");
                 let shuffleButton = document.querySelector(".functions__shuffle");
                 let backButton = document.querySelector(".functions__back");
