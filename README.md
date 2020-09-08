@@ -1,5 +1,35 @@
 # PWA-den-valgfrie-opgave
 
+# Aflevering
+https://iplayer.netlify.app/
+
+• Musik  • IPlayMusic v2 • Music Player 
+ 
+Vigtigste funktion: en Player der fungere 
+ 
+# Features
+Bowse - Player – Search 
+ 
+browse sektionen skal vise nye playlister og nyt musik 
+ 
+Player sektionen skal have en player der viser sangens information, Art Work og timeline / Progress bar som virker, search sektionen kan man søge efter sange og playlister. 
+ 
+Jeg skal enten fetch fra Spotifys Api ellers uploader jeg selv filerne. 
+ 
+Man skal kunne lytte til musik imens man har låst telefonen. 
+ 
+Mobile only – PWA 
+
+# UserFlow
+
+User flow find sang, lyt til sang, lyt i låst tilstand 
+ 
+<--------------------------------------------------------------------------------------------------> 
+ 
+Find sang | sangen spiller | Progress bar | du kan skimme | skru op og ned for lyden | næste sang 
+ 
+_________________________________________________________________________________________________ 
+
 # Formål: 
 Opgaven har til formål at, demonstrere at **koncepterne fra PWA undervisningen** kan anvendes i praksis i fremstillingen at et produkt.
 
@@ -30,6 +60,3 @@ Dit projekt skal derfor integreres med:
   2. En **Serviceworker**
   
 # Build, test, and lear
-
-# Aflevering
-https://iplayer.netlify.app/
