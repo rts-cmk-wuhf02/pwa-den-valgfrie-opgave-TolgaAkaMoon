@@ -32,12 +32,13 @@
     outline: none;
     animation: noneToShow 200ms linear ;
     transition: all 0.5s ease-in-out;
-    display: show;
+    z-index: 5;
 }
 
 .install {
     width: 100%;
     outline: none;
+    z-index: 5;
 }
 
 
@@ -62,15 +63,17 @@
         letter-spacing: 2px;
         font-weight: lighter;
         outline: none;
-        animation: noneToShow 200ms linear ;
+        animation: noneToShow 200ms linear;
         transition: all 0.5s ease-in-out;
         display: show;
+        z-index: 5;
     }
     
     .install {
         width: 70px;
         margin-right: 40px;
         outline: none;
+        z-index: 5;
     }
     
     

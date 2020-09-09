@@ -88,6 +88,17 @@ function watchServiceworker(done) {
     gulp.watch('./sw.js', { ignoreInitial: false }, serviceWorker);
 }
 
+function favicon(done) {
+    gulp.src('./favicon.ico')
+        .pipe(gulp.dest('./dist/'))
+        .pipe(connect.reload());
+    done();
+}
+
+function watchFavicon(done) {
+    gulp.watch('./favicon.ico', { ignoreInitial: false }, favicon);
+}
+
 
 function images(done) {
     gulp.src("./assets/images/*")
@@ -108,6 +119,7 @@ gulp.task('dev', function (done) {
     watchMp3()
     watchScss();
     watchJs();
+    watchFavicon();
     watchImages();
     connect.server({
         livereload: true,
@@ -123,6 +135,7 @@ gulp.task('build', function (done) {
     mp3(done)
     scss(done);
     js(done);
+    favicon(done)
     images(done);
     done();
 });
