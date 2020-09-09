@@ -8,10 +8,12 @@ const { StaleWhileRevalidate } = workbox.strategies;
 precacheAndRoute([
   { url: '/index.html', revision: null},
   { url: '/fallback.html', revision: null},
-  { url: '/assets/images/marioios.png', revision: null},
-  { url: '/assets/images/mario.png', revision: null},
+  { url: '/assets/images/icon.png', revision: null},
   { url: '/assets/javascript/script.js', revision: null},
+  { url: '/assets/javascript/navbar.js', revision: null},
+  { url: '/assets/javascript/player.js', revision: null},
   { url: '/assets/css/style.css', revision: null},
+  { url: '/assets/css/player.css', revision: null},
 ])
 
 registerRoute(({ url }) => url.pathname.startsWith("/"), new StaleWhileRevalidate());
@@ -26,14 +28,15 @@ setCatchHandler(({ url, event, params }) => {
 
 let cacheName = "static-cache-v1";
 let filesToCache = [
-    '/',
-    '/index.html',
-    '/fallback.html',
-    '/test/index.html',
-    '/assets/images/marioios.png',
-    '/assets/images/mario.png',
-    '/assets/css/style.css',
-    '/assets/javascript/script.js'
+  '/',
+  '/index.html',
+  '/fallback.html',
+  '/assets/images/icon.png',
+  '/assets/javascript/script.js',
+  '/assets/javascript/navbar.js',
+  '/assets/javascript/player.js',
+  '/assets/css/style.css',
+  '/assets/css/player.css'
 ]
 
 self.addEventListener('install', function(event) {
