@@ -32,6 +32,25 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .then(res => res.json())
             .then(track => {
+
+                let musicFiles = [
+                    {name: "elvis", path: "../assets/song/ELVIS.mp3"},
+                    {name: "guap", path: "../assets/song/Guap.mp3"},
+                    {name: "love", path: "../assets/song/LOVE.mp3"},
+                    {name: "rewinder", path: "../assets/song/Rewinder.mp3"}
+                ];
+
+                
+                if (track.name == "ALL MY LOVE (feat. ATYPISK)"){
+                    document.querySelector(".player__src").src = musicFiles[2].path;
+                } else if (track.name == "ELVIS (feat. Carmon)"){
+                    document.querySelector(".player__src").src = musicFiles[0].path;
+                } else if (track.name == "Guap"){
+                    document.querySelector(".player__src").src = musicFiles[1].path;
+                } else if (track.name == "Rewinder (feat. Lamin & NODE)"){
+                    document.querySelector(".player__src").src = musicFiles[3].path;
+                } else {}
+
                 document.querySelector(".container__img").src = track.album.images[0].url
                 document.querySelector(".section__artistIMG").src = track.album.images[0].url
                 document.querySelector(".section__artist").innerText = track.artists[0].name
@@ -43,25 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
                   }
                 document.querySelector(".container__end").innerText = millisToMinutesAndSeconds(track.duration_ms);
 
-                let musicFiles = [
-                    {name: "elvis", path: "../assets/song/ELVIS.mp3"},
-                    {name: "guap", path: "../assets/song/Guap.mp3"},
-                    {name: "love", path: "../assets/song/LOVE.mp3"},
-                    {name: "rewinder", path: "../assets/song/Rewinder.mp3"}
-                ];
-
-                
-                    if (track.name == "ALL MY LOVE (feat. ATYPISK)"){
-                        document.querySelector(".player__src").src = musicFiles[2].path;
-                    } else if (track.name == "ELVIS (feat. Carmon)"){
-                        document.querySelector(".player__src").src = musicFiles[0].path;
-                    } else if (track.name == "Guap"){
-                        document.querySelector(".player__src").src = musicFiles[1].path;
-                    } else if (track.name == "Rewinder (feat. Lamin & NODE)"){
-                        document.querySelector(".player__src").src = musicFiles[3].path;
-                    } else {}
-
-
                 let music = document.querySelector(".container__player");
                 let shuffleButton = document.querySelector(".functions__shuffle");
                 let backButton = document.querySelector(".functions__back");
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let repeatButton = document.querySelector(".functions__repeat");
                 let mDuration = millisToMinutesAndSeconds(track.duration_ms);
 
-                music.setAttribute("title", track.name)
+                music.setAttribute("title", track.artists[0].name + " - " + track.name)
                 music.setAttribute("poster", track.album.images[0].url)
 
                 playButton.addEventListener("click", function () { if (music.paused) { music.play();
